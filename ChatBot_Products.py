@@ -30,7 +30,7 @@ client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 # ----------------------------
 @st.cache_data
 def load_catalog():
-    df = pd.read_csv("C:/Users/furca/Downloads/pet_store_shampoo_conditioner_products_full.csv").fillna("")
+    df = pd.read_csv("pet_store_shampoo_conditioner_products_full.csv").fillna("")
     return df
 
 df = load_catalog()
